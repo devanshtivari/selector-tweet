@@ -4,7 +4,11 @@ function send_tweet(){
     if(textarea.value.length === 0){
         launch_toast("Please enter a text");
         return;
-    }   
+    } 
+    if(document.getSelection().toString().length === 0) {
+      console.log("No text is selected");
+      launch_toast("Please select a text");
+    }  
     if(document.getSelection().toString()){
         const selection = document.getSelection().toString();
         const URL = location.href;
