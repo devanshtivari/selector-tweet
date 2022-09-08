@@ -1,0 +1,58 @@
+body{
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
+
+#heading{
+    text-align: center;
+    color: rgba(174, 167, 237, 0.786);
+    font-size: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+#text-box{
+    background-color:rgba(240, 244, 247, 0.835);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    height: 80vh;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+}
+
+#text-area{
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    margin: 1px 6px 1px 6px;
+    height: 100%;
+    resize: none;
+    color: gray;
+}
+
+#twitter-btn{
+    z-index: 1001;
+    position: absolute;
+    left: 901px;
+    bottom: 100px;
+}
+
+/* for scrollbar */
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(43, 43, 231, 0.818);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(43, 43, 231);
+}
